@@ -443,22 +443,25 @@
       </div>
       
 
-<div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 mt-8 px-4 md:px-0 justify-center">
-    <div style="border: 2px solid rgb(219, 214, 214);" class="bg-white flex flex-col items-center text-center space-y-4 bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
-        <img src="drakbar.png" alt="Dr. Sk Akbar" class="w-48 h-48 rounded-full shadow-md">
-        <h3 class="text-2xl font-bold text-gray-800">Dr. Sk Akbar</h3>
-        <p class="text-blue-600 font-semibold">Professor & HOD of CSE-DATA SCIENCE Dept</p>
-        <p class="text-gray-600"><strong>Email:</strong> dr.akbar@pscmr.ac.in</p>
-        <p class="text-gray-600"><strong>Phone:</strong> +91 99480 33466</p>
-    </div>
-    <div style="border: 2px solid rgb(219, 214, 214);" class="bg-white flex flex-col items-center text-center space-y-4 bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
-        <img src="Pathanjali-Sastri.jpg" alt="Prof. A. Pathanjali Sastri" class="w-48 h-48 rounded-full shadow-md">
-        <h3 class="text-2xl font-bold text-gray-800">Prof. A. Pathanjali Sastri</h3>
-        <p class="text-blue-600 font-semibold">Professor and HOD of MCA dept & Vice-Principal</p>
-        <p class="text-gray-600"><strong>Email:</strong> viceprincipal@pscmr.ac.in</p>
-        <p class="text-gray-600"><strong>Phone:</strong> +91 98484 09689</p>
-    </div>
-</div>
+      <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 mt-8 px-4 md:px-0 justify-center">
+        <div style="border: 2px solid rgb(219, 214, 214);" class="bg-white flex flex-col items-center text-center space-y-4 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+          <img src="drakbar.png" alt="Dr. Sk Akbar" class="w-48 h-48 rounded-full shadow-md">
+          <h3 class="text-2xl font-bold text-gray-800">Dr. Sk Akbar</h3>
+          <p class="text-blue-600 font-semibold">Professor & HOD of CSE-DATA SCIENCE Dept</p>
+          <p class="text-gray-600"><strong>Email:</strong> dr.akbar@pscmr.ac.in</p>
+          <p class="text-gray-600"><strong>Phone:</strong> +91 99480 33466</p>
+          <a href="https://www.pscmr.ac.in/faculty_datascience.php" target="_blank" class="text-blue-500 hover:underline">View More Details</a>
+        </div>
+        <div style="border: 2px solid rgb(219, 214, 214);" class="bg-white flex flex-col items-center text-center space-y-4 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+          <img src="Pathanjali-Sastri.jpg" alt="Prof. A. Pathanjali Sastri" class="w-48 h-48 rounded-full shadow-md">
+          <h3 class="text-2xl font-bold text-gray-800">Dr. A. Pathanjali Sastri</h3>
+          <p class="text-blue-600 font-semibold">Professor and HOD of MCA Dept & Vice-Principal</p>
+          <p class="text-gray-600"><strong>Email:</strong> viceprincipal@pscmr.ac.in</p>
+          <p class="text-gray-600"><strong>Phone:</strong> +91 98484 09689</p>
+          <a href="https://www.pscmr.ac.in/mcaindex.php" target="_blank" class="text-blue-500 hover:underline">View More Details</a>
+        </div>
+      </div>
+      
 
 <section id="contact" class="py-12 bg-white p-5">
     <div class="container mx-auto text-white flex flex-col md:flex-row">
@@ -470,25 +473,32 @@
       </div>
 
       <div class="w-full md:w-1/2 space-y-8 md:ml-5 mt-10">
-        <p class="text-black font-bold text-3xl underline-blue text-center">Contact Us</p>
-        <div class="bg-gray-100 text-black p-6 rounded-lg shadow-lg">
+        <p class="text-black font-bold text-3xl text-center flex items-center justify-center">
+          <i class="fas fa-envelope mr-3 text-blue-900"></i>
+          <span class="underline-blue">Contact Us</span>
+        </p>
+        
+        <div class="bg-gray-100 text-black p-6 rounded-lg shadow-lg h-[490px]">
           <form class="max-w-xl mx-auto p-8 rounded-lg">
-            <div class="mb-4">
-              <label for="name" class="block text-sm font-bold mb-2">Name:</label>
-              <input type="text" id="name" name="name" class="w-full px-3 py-2 bg-white border border-gray-700 rounded text-black" required />
+            <div class="mb-4 flex items-center border border-gray-700 rounded">
+              <i class="fas fa-user px-3 py-2 text-gray-500"></i>
+              <label for="name" class="sr-only">Name:</label>
+              <input type="text" id="name" name="name" class="w-full px-3 py-2 bg-white text-black rounded" placeholder="Name" required />
             </div>
-            <div class="mb-4">
-              <label for="email" class="block text-sm font-bold mb-2">Email:</label>
-              <input type="email" id="email" name="email" class="w-full px-3 py-2 bg-white border border-gray-700 rounded text-black" required />
+            <div class="mb-4 flex items-center border border-gray-700 rounded">
+              <i class="fas fa-envelope px-3 py-2 text-gray-500"></i>
+              <label for="email" class="sr-only">Email:</label>
+              <input type="email" id="email" name="email" class="w-full px-3 py-2 bg-white text-black rounded" placeholder="Email" required />
             </div>
-            <div class="mb-4">
-              <label for="message" class="block text-sm font-bold mb-2">Message:</label>
-              <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 bg-white border border-gray-700 rounded text-black" required></textarea>
+            <div class="mb-4 flex items-center border border-gray-700 rounded">
+              <i class="fas fa-comment-dots px-3 py-2 text-gray-500"></i>
+              <label for="message" class="sr-only">Message:</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 bg-white text-black rounded" placeholder="Message" required></textarea>
             </div>
             <div class="text-center">
               <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-gray-500">Submit</button>
             </div>
-          </form>
+          </form>          
         </div>
       </div>
     </div>
